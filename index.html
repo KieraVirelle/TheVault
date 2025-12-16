@@ -1,0 +1,376 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Vault | Nightlife Collective</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="vault-overlay" aria-hidden="true">
+    <div class="vault-emblem">
+      <div class="vault-ring"></div>
+      <div class="vault-wordmark">The Vault</div>
+      <div class="vault-sub">Private Nightlife Syndicate</div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="logo">The Vault</div>
+    <nav class="nav">
+      <a href="#" class="nav-link active" data-panel-target="venues">The Family</a>
+      <a href="#" class="nav-link" data-panel-target="events">Current Events</a>
+      <a href="#" class="nav-link" data-panel-target="archived-events">Archived Events</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main class="panels">
+    <section class="hero intro-block">
+      <div class="hero__copy">
+        <p class="eyebrow">Eorzea Nightlife Collective</p>
+        <h1 class="hero-title">Welcome to The Vault. Where our nightclubs unite to craft unforgettable events.</h1>
+        <span class="crest-divider"></span>
+        <p class="lede hero-lede">A collab of venues coming together to craft great events and experiences for the Eorzean nightlife scene.</p>
+      </div>
+      <div class="hero__panel" aria-hidden="true">
+        <div class="glow"></div>
+        <div class="card translucent video-card">
+          <div class="card__header">
+            <div class="dot"></div>
+            <span>Featured video</span>
+          </div>
+          <div class="video-frame breathe">
+            <div class="video-placeholder">Video highlight coming soon</div>
+          </div>
+        </div>
+        <div class="card spotlight">
+          <div class="card__header">
+            <div class="dot"></div>
+            <span>Tonight's spotlight</span>
+          </div>
+          <div class="spotlight-body">
+            <div class="spotlight-logo">
+              <img id="spotlight-image" src="images/PulseLogo.png" alt="Spotlight venue logo" loading="lazy">
+            </div>
+            <p class="spotlight-copy" id="spotlight-copy">Pulse - Fridays 9PM-1AM EST ú Dynamis ú Rafflesia ú Goblet ú Plot 17 ú Ward 60</p>
+            <div class="spotlight-actions">
+              <a class="pill-btn primary" id="spotlight-discord" href="https://discord.gg/SYrZ3sAsad" target="_blank" rel="noreferrer">Discord</a>
+              <a class="pill-btn ghost" id="spotlight-carrd" href="https://pulsexiv.carrd.co/" target="_blank" rel="noreferrer">Carrd</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section page-panel active" id="venues" data-panel="venues">
+      <div class="family-showcase">
+        <article class="venue-block pulse highlight">
+          <div class="venue-media">
+            <img src="images/PulseLogo.png" alt="Pulse nightclub showcase" loading="lazy">
+            <span class="image-tag">Pulse</span>
+          </div>
+          <div class="venue-body">
+            <h3>Pulse</h3>
+            <p class="lede">High-energy DJs with raffles and RPS DRT nights. Join their Discord for the bar menu and gamba drinks.</p>
+            <ul class="diamond-list">
+              <li>World: Dynamis | Rafflesia | Goblet | Plot 17 | Ward 60</li>
+              <li>Hours: Fridays 9PM - 1AM EST</li>
+              <li>18+ NSFW</li>
+              <li>WiFi: Lightless - PulsePublic / pulsepub6969</li>
+            </ul>
+            <div class="link-row">
+              <a class="gold-link" href="https://discord.gg/SYrZ3sAsad" target="_blank" rel="noreferrer">Discord</a>
+              <a class="gold-link" href="https://pulsexiv.carrd.co/" target="_blank" rel="noreferrer">Carrd</a>
+            </div>
+          </div>
+        </article>
+        <article class="venue-block pandora">
+          <div class="venue-media">
+            <img src="images/Morningstar.png" alt="Pandora showcase" loading="lazy">
+            <span class="image-tag">Pandora</span>
+          </div>
+          <div class="venue-body">
+            <h3>Pandora</h3>
+            <p class="lede">Where every secret unlocks new levels of pleasure. Join their Discord for all venue news and openings.</p>
+            <ul class="diamond-list">
+              <li>World: Dynamis | Kraken | Mist | Ward 11 | Plot 15</li>
+              <li>Schedule: Every Thursday at 10 EST</li>
+              <li>18+ NSFW</li>
+              <li>WiFi: UID Pandora / Password OpenTheBox</li>
+            </ul>
+            <div class="link-row">
+              <a class="gold-link" href="https://discord.gg/eXvAefPP8G" target="_blank" rel="noreferrer">Discord</a>
+              <a class="gold-link" href="https://pandoraffxiv.carrd.co/" target="_blank" rel="noreferrer">Carrd</a>
+            </div>
+          </div>
+        </article>
+        <article class="venue-block shadowsong">
+          <div class="venue-media">
+            <img src="images/ShadowSong-Glow.png" alt="Club Shadowsong showcase" loading="lazy">
+            <span class="image-tag">Club Shadowsong</span>
+          </div>
+          <div class="venue-body">
+            <h3>Club Shadowsong</h3>
+            <p class="lede">Neon-soaked nights in Mist. Join their Discord for all venues, openings, and live updates.</p>
+            <ul class="diamond-list">
+              <li>World: Dynamis | Kraken | Mist | Ward 2 | Plot 45</li>
+              <li>Hours: Saturdays 12 AM - 5 AM EST</li>
+              <li>18+ NSFW</li>
+              <li>WiFi Lightless: MSS-NNPA72A04G5E (ShadowsongLightless)</li>
+            </ul>
+            <div class="link-row">
+              <a class="gold-link" href="https://discord.gg/JNz8WucgmN" target="_blank" rel="noreferrer">Discord</a>
+              <a class="gold-link" href="https://club-shadowsong.carrd.co/" target="_blank" rel="noreferrer">Carrd</a>
+            </div>
+          </div>
+        </article>
+        <article class="venue-block konpeki">
+          <div class="venue-media">
+            <img src="images/Konpeki.png" alt="Konpeki Casino showcase" loading="lazy">
+            <span class="image-tag">Konpeki Casino</span>
+          </div>
+          <div class="venue-body">
+            <h3>Konpeki</h3>
+            <p class="lede">Lavish casino vibes. Join their Discord for all venues, openings, and live updates.</p>
+            <ul class="diamond-list">
+              <li>World: Dynamis | Rafflesia | Lavabeds | Ward 5 | Plot 3</li>
+              <li>Hours: Sundays 8 PM - 12 AM EST</li>
+              <li>18+ NSFW</li>
+              <li>Lightsync: MSS-5GQ2WF5OU4VS (KonpekiCasino)</li>
+            </ul>
+            <div class="link-row">
+              <a class="gold-link" href="https://discord.gg/konpeki" target="_blank" rel="noreferrer">Discord</a>
+              <a class="gold-link" href="https://konpeki.carrd.co/" target="_blank" rel="noreferrer">Carrd</a>
+            </div>
+          </div>
+        </article>
+        <article class="venue-block maneki-neko">
+          <div class="venue-media">
+            <img src="images/ManekiNeko.png" alt="Maneki Neko showcase" loading="lazy">
+            <span class="image-tag">Maneki Neko</span>
+          </div>
+          <div class="venue-body">
+            <h3>Maneki Neko</h3>
+            <p class="lede">Raffle & bingo DRT gamba den. Join their Discord for openings, specials, and weekly games.</p>
+            <ul class="diamond-list">
+              <li>World: Dynamis | Rafflesia | Goblet | Ward 2 | Plot 30</li>
+              <li>Hours: Mondays & Tuesdays 9 PM - 2 AM EST</li>
+              <li>18+ NSFW</li>
+            </ul>
+            <div class="link-row">
+              <a class="gold-link" href="https://discord.gg/qe4kDRtp8d" target="_blank" rel="noreferrer">Discord</a>
+              <a class="gold-link" href="https://maneki-neko.crd.co/" target="_blank" rel="noreferrer">Carrd</a>
+            </div>
+          </div>
+        </article>
+        <article class="venue-block neon-neko">
+          <div class="venue-media">
+            <img src="images/NeonNeko_Tailless.png" alt="Neon Neko showcase" loading="lazy">
+            <span class="image-tag">Neon Neko</span>
+          </div>
+          <div class="venue-body">
+            <h3>Neon Neko</h3>
+            <p class="lede">Hard bass nightclub with DRT and weekly raffles. Join their Discord for openings and set drops.</p>
+            <ul class="diamond-list">
+              <li>World: Dynamis | Kraken | Mist | Ward 3 | Plot 3</li>
+              <li>Hours: Saturdays 10 PM - 2 AM EST</li>
+              <li>18+ NSFW</li>
+              <li>WiFi Lightless: MSS-HY4JXFGE8TM5 (NeonNekoPub)</li>
+            </ul>
+            <div class="link-row">
+              <a class="gold-link" href="https://discord.gg/neonneko" target="_blank" rel="noreferrer">Discord</a>
+              <a class="gold-link" href="https://www.neonneko.cc/#home" target="_blank" rel="noreferrer">Carrd</a>
+            </div>
+          </div>
+        </article>
+        <article class="venue-block worlds-end">
+          <div class="venue-media worlds-end">
+            <img src="images/Worlds_End_White.png" alt="The Worlds End showcase" loading="lazy">
+            <span class="image-tag">The Worlds End</span>
+          </div>
+          <div class="venue-body">
+            <h3>The Worlds End</h3>
+            <p class="lede">Tavern-meets-nightfall lounge with DRT and raffles. Join their Discord for openings and specials.</p>
+            <ul class="diamond-list">
+              <li>World: Dynamis | Rafflesia | Mist | Ward 5 | Plot 2</li>
+              <li>Hours: Sundays 8:00 PM - 12:00 AM PST</li>
+              <li>18+ NSFW</li>
+              <li>WiFi Lightless: MSS-NYFBDK6DFAN8 (Pass: EndOfTheWorld)</li>
+            </ul>
+            <div class="link-row">
+              <a class="gold-link" href="https://discord.gg/8PhuEU6C8K" target="_blank" rel="noreferrer">Discord</a>
+              <a class="gold-link" href="https://theworldsend.carrd.co/" target="_blank" rel="noreferrer">Carrd</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt page-panel holiday" id="archived-events" data-panel="archived-events">
+      <div class="event-hero">
+        <div>
+          <p class="eyebrow">Past feature</p>
+          <h2>The Vault: Yuletide Takeover 2025</h2>
+          <div class="holiday-chips">
+            <span>❄️ Snowfall nights</span>
+            <span>🎄 Red-light & cozy cafe</span>
+            <span>🎁 Raffles & games</span>
+          </div>
+        <p class="lede">Our holiday mega-collab: every venue under one roof for a night of red-light revelry, games, and winter magic.</p>
+        <div class="link-row">
+          <a class="pill-btn primary" href="https://yuletidetakeover.carrd.co/" target="_blank" rel="noreferrer">Event site</a>
+          <a class="pill-btn ghost" href="https://vaultadventcalendar.carrd.co/" target="_blank" rel="noreferrer">Advent calendar</a>
+          <a class="pill-btn ghost" href="https://starlightcafemenu.carrd.co/" target="_blank" rel="noreferrer">Starlight Cafe menu</a>
+        </div>
+      </div>
+    </div>
+
+      <div class="event-grid">
+        <article class="event-card holiday-card">
+          <h3>Experiences</h3>
+          <ul class="holiday-list">
+            <li>North Pole Strip Club by Redlight District</li>
+            <li>Starlight Cafe by the full family</li>
+            <li>Yuletide Gamba House by Konpeki</li>
+            <li>Photobooths with Santa + Winter Wonderland (venue gposers)</li>
+            <li>Tinsel Tower jump puzzle by Galactic Circus</li>
+            <li>Competition jump puzzle by Galactic Circus</li>
+            <li>Yuletide Trivia Advent Calendar by Morningstar Collection</li>
+            <li>Mr. Scrooge's Bingo Hall by Maneki Neko</li>
+            <li>50/50 Raffle by Neon Neko</li>
+            <li>DRT hosted by Pulse</li>
+            <li>Auction by Morningstar Collection & Neon Neko</li>
+          </ul>
+        </article>
+
+        <article class="event-card holiday-card">
+          <div class="event-media holiday-poster">
+            <img src="images/Yuletide_Takeover_2025_V3_01.png" alt="Yuletide Takeover poster" loading="lazy">
+          </div>
+          <h3>Live DJs</h3>
+          <div class="dj-grid">
+            <a class="dj-card" href="https://www.twitch.tv/scarletraynexiv" target="_blank" rel="noreferrer">
+              <img src="images/Scarlett.png" alt="ScarletRayneXIV logo" loading="lazy">
+              <span>ScarletRayneXIV</span>
+            </a>
+            <a class="dj-card" href="https://www.twitch.tv/partyzapper" target="_blank" rel="noreferrer">
+              <img src="images/partyzapperlogo.png" alt="Partyzapper logo" loading="lazy">
+              <span>Partyzapper</span>
+            </a>
+            <a class="dj-card" href="https://www.twitch.tv/goozin" target="_blank" rel="noreferrer">
+              <img src="images/logo_goozin.png" alt="Goozin logo" loading="lazy">
+              <span>Goozin</span>
+            </a>
+            <a class="dj-card" href="https://twitch.tv/aetherpulse" target="_blank" rel="noreferrer">
+              <img src="images/AetherPulse-Logo-NoGlow.png" alt="AetherPulse logo" loading="lazy">
+              <span>AetherPulse</span>
+            </a>
+            <a class="dj-card" href="https://www.twitch.tv/toto_baby" target="_blank" rel="noreferrer">
+              <img src="images/ToToBaby.png" alt="Toto_Baby logo" loading="lazy">
+              <span>Toto_Baby</span>
+            </a>
+            <a class="dj-card" href="https://www.twitch.tv/ctrlzmusic" target="_blank" rel="noreferrer">
+              <img src="images/ctrlz.png" alt="CtrlZMusic logo" loading="lazy">
+              <span>CtrlZMusic</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="event-card holiday-card">
+          <h3>Map & highlights</h3>
+          <div class="event-media inset holiday-poster">
+            <img src="images/MAP.png" alt="Yuletide Takeover map" loading="lazy">
+          </div>
+          <p class="lede small">Red-light, cafe, gamba, photobooths, jump puzzles, trivia, bingo, raffles, auctions-one night, all family venues.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section page-panel" id="events" data-panel="events">
+      <div class="section__header">
+        <p class="eyebrow">Current Events</p>
+        <h2>Upcoming collaborations.</h2>
+        <p class="lede">Fresh lineups and specials coming soon.</p>
+      </div>
+      <div class="event-grid simple">
+        <article class="event-card">
+          <h3>Next event drop</h3>
+          <p class="lede small">Check back for the next Vault collab lineup.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section page-panel" id="locations" data-panel="locations">
+      <div class="section__header">
+        <p class="eyebrow">Locations</p>
+        <h2>Where to find us across the DCs.</h2>
+        <p class="lede narrow">Swap in real logos and links. Each tile can point to a Discord, Carrd, or site.</p>
+      </div>
+      <div class="grid cards logos">
+        <article class="feature-card logo-card">
+          <div class="avatar">VR</div>
+          <div>
+            <h3>The Velvet Room</h3>
+            <p>Primal · Lavender Beds</p>
+            <div class="link-row">
+              <a href="#">Discord</a>
+              <a href="#">Carrd</a>
+            </div>
+          </div>
+        </article>
+        <article class="feature-card logo-card">
+          <div class="avatar">RH</div>
+          <div>
+            <h3>Ruby Hall</h3>
+            <p>Crystal · Goblet</p>
+            <div class="link-row">
+              <a href="#">Discord</a>
+              <a href="#">Website</a>
+            </div>
+          </div>
+        </article>
+        <article class="feature-card logo-card">
+          <div class="avatar">NR</div>
+          <div>
+            <h3>Noir</h3>
+            <p>Aether · Mist</p>
+            <div class="link-row">
+              <a href="#">Discord</a>
+              <a href="#">Carrd</a>
+            </div>
+          </div>
+        </article>
+        <article class="feature-card logo-card">
+          <div class="avatar">GF</div>
+          <div>
+            <h3>The Gilded Fox</h3>
+            <p>Dynamis · Shirogane</p>
+            <div class="link-row">
+              <a href="#">Discord</a>
+              <a href="#">Carrd</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="logo">The Vault</div>
+    <div class="footer__links">
+      <a href="#" class="panel-jump" data-panel-target="venues">The Family</a>
+      <a href="#" class="panel-jump" data-panel-target="events">Current Events</a>
+      <a href="#" class="panel-jump" data-panel-target="archived-events">Archived Events</a>
+    </div>
+    <p class="fine-print signature signature-top">To my Vault Fam &lt;3</p>
+    <p class="fine-print signature">Made with love - Kiera V.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
