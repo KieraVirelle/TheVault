@@ -720,7 +720,7 @@ main.panels {
 .family-showcase.carousel {
   position: relative;
   display: block;
-  perspective: 1800px;
+  perspective: 1400px;
   height: 620px;
   padding: 1rem 0 2rem;
   overflow: visible;
@@ -732,9 +732,12 @@ main.panels {
   top: 0.5rem;
   width: min(440px, 70vw);
   transform-style: preserve-3d;
-  transition: transform 0.4s ease, opacity 0.32s ease, box-shadow 0.32s ease;
+  transition: transform 0.3s ease, opacity 0.22s ease;
   backface-visibility: hidden;
   will-change: transform, opacity;
+  transform: translateZ(0);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.2));
 }
 
 .venue-block {
@@ -1014,6 +1017,8 @@ body.modal-open .footer {
 .venue-block.neon-neko .venue-media img {
   max-width: 80%;
   max-height: 75%;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .venue-block.neon-neko .gold-link {
