@@ -732,7 +732,9 @@ main.panels {
   top: 0.5rem;
   width: min(440px, 70vw);
   transform-style: preserve-3d;
-  transition: transform 0.6s ease, opacity 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.32s ease, box-shadow 0.32s ease;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
 }
 
 .venue-block {
@@ -1733,7 +1735,26 @@ textarea:focus {
 }
 
 .signature-top {
-  margin-bottom: 0;
+  margin: 0 0 0.2rem;
+}
+
+.heart-icon {
+  color: #c5a467;
+  font-weight: 700;
+}
+
+.signature-block {
+  justify-self: end;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-end;
+}
+
+.signature-line {
+  margin: 0;
+  color: var(--text);
 }
 
 .eyebrow {
