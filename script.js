@@ -174,7 +174,7 @@
     day: 5, // Friday
     name: "Pulse",
     image: "images/PulseLogo.png",
-    copy: "Pulse — Fridays 9PM-1AM EST · Dynamis · Rafflesia · Goblet · Plot 17 · Ward 60",
+    copy: "Pulse — Fridays 9PM-1AM EST · Dynamis · Rafflesia · Goblet · Ward 17 · Plot 60",
     discord: "https://discord.gg/SYrZ3sAsad",
     carrd: "https://pulsexiv.carrd.co/",
   },
@@ -264,6 +264,7 @@
 
   setupCarousel();
 });
+
 
 
 
